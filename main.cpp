@@ -60,12 +60,72 @@ if ( x%4==0){
     cout<<x<<" is not a leap year"<<endl;
     }
 }*/
-    double a, b,c;
-    cout<<"Enter coefficients a, b, and c:";
-    cin>>a>>b>>c;
-    double discriminant= b*b-4*a*c;
-    if (discriminant>0){
-        double root1=(-b+sqrt(discriminant))/(2*a)
-    }
-    if
+    /* double a, b, c;
+     cout << "Enter coefficients a, b, c: ";
+     cin >> a >> b >> c;
+
+     if (a == 0) {
+         cout << "Coefficient 'a' must not be zero." << endl;
+         return 1;
+     }
+
+     double discriminant = b * b - 4 * a * c;
+
+     cout << fixed << setprecision(6); // Set precision for output
+
+     if (discriminant > 0) {
+         // Two real roots
+         double x1 = (-b + sqrt(discriminant)) / (2 * a);
+         double x2 = (-b - sqrt(discriminant)) / (2 * a);
+         cout << "x1=" << x1 << " x2=" << x2 << endl;
+     } else if (discriminant == 0) {
+         // One real root
+         double x1 = -b / (2 * a);
+         cout << "x1=x2=" << x1 << endl;
+     } else {
+         // Complex roots
+         double realPart = -b / (2 * a);
+         double imaginaryPart = sqrt(-discriminant) / (2 * a);
+         cout << "x1=" << realPart << "+" << imaginaryPart << "i "
+              << "x2=" << realPart << "-" << imaginaryPart << "i" << endl;
+     }
+
+     return 0;
+ } */
+     /*problem7
+    int a, b, c;
+    cout << "Enter coefficients a, b, c:" << endl;
+    cin >> a >> b >> c;
+    if (a + b >= c || a + c >= b || b + c >= a) {
+        cout << " The triangle is valid";
+    } else { cout << " The triangle is not valid"<<endl; }*/
+     /*
+     char ch;
+        // Input a character
+        cout << "Enter a character: ";
+        cin >> ch;
+
+        // Check if the character is an uppercase letter
+        if (ch >= 'A' && ch <= 'Z') {
+            cout << "Uppercase alphabet" << endl;
+        }
+            // Check if the character is a lowercase letter
+        else if (ch >= 'a' && ch <= 'z') {
+            cout << "Lowercase alphabet" << endl;
+        }
+            // If it's neither, it's not an alphabet
+        else {
+            cout << "It is not an alphabet" << endl;
+        }  return 0;
+        */
+     int x, y;
+     cin>> x>>y;
+    double distance = sqrt(pow(x, 2) + pow(y, 2));
+     if ( x<5 && y<5) {
+         cout << " Point (" <<x<<","<< y<<") is in circle";
+     }else if ( x>5 && y>5) {
+         cout << " Point ("<<x<<","<< y<<") is not in circle"<< endl;
+     }
+    return 0;
+
 }
