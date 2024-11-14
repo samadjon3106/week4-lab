@@ -146,3 +146,29 @@ int counts(const string& s, char a) {
    cout<< result<<endl;
 return 0;
 }
+
+
+
+// void countLetters(const char s[], int counts[]) {
+//     for (int i = 0; i < 26; i++) {
+//         counts[i] = 0;
+//     }
+//     for(int i=0; s[i] != '\0'; ++i) {
+//         char c = tolower(s[i]);
+//         if (c >= 'a' && c <= 'z') {
+//             counts[c-'a']++;
+//         }
+//     }
+// }
+// int main() {
+//     char input[100];
+//     int counts[26];
+//     cout<< "Enter a string: ";
+//     cin.getline(input, 100);
+//     countLetters(input, counts);
+//     for (int i = 0; i < 26; ++i) {
+//         if(counts[i] > 0) {
+//             cout << char('a' + i)<<":"<<counts[i]<<endl;;
+//         }
+//     } return 0;
+// }
